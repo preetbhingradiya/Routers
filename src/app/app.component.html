@@ -8,3 +8,7 @@
 <a routerLink="login"  [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">Login</a><br><br>
 <a routerLink="login" [queryParams]="{logout:true}"  [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">LogOut</a>
 <router-outlet ></router-outlet>
+
+<div class="overlay" *ngIf="showLoader">
+  <div class="loader"></div>
+</div>
